@@ -1,0 +1,27 @@
+:root {
+    --layout-bar-height: 100px;
+}
+
+.Layout-bar {
+    height: var(--layout-bar-height);
+    width: 100%;
+    background-color: black;
+}
+
+.Layout-bottom-bar {
+    position: absolute;
+    bottom: 0px;
+}
+
+.Navigation-button {
+    --font-size: 20px;
+    position: relative;
+    font-size: var(--font-size);
+    color: white;
+    top: calc(var(--layout-bar-height) / 2 - var(--font-size) / 1.5);
+    padding-left: 50px;
+}
+
+.Navigation-button:hover {
+    cursor: pointer;
+}
