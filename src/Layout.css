@@ -17,11 +17,40 @@
     --font-size: 20px;
     position: relative;
     font-size: var(--font-size);
-    color: white;
     top: calc(var(--layout-bar-height) / 2 - var(--font-size) / 1.5);
     padding-left: 50px;
+    color: lightgray;
+    transition-property: color;
+    transition-duration: 0.2s;
 }
 
 .Navigation-button:hover {
     cursor: pointer;
+    color: white;
+}
+
+.page-enter {
+    opacity: 0;
+}
+
+.page-enter.page-enter-active {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.page-enter-done {
+    opacity: 1;
+}
+
+.page-exit {
+    opacity: 1;
+}
+
+.page-exit.page-exit-active {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.page-exit-done {
+    opacity: 0;
 }
